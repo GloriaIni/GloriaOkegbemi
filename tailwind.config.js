@@ -1,3 +1,5 @@
+const { Montserrat } = require('next/font/google');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -11,6 +13,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      fontFamily: {
+        montserrat: ["var(--montserrat)", "san-serif"]
+      }
     },
   },
   plugins: [],

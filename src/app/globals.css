@@ -2,20 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@layer base {
+
+  body {
+    @apply  overflow-x-hidden leading-relaxed   
+  }
+  
+  .page {
+    @apply w-full overflow-x-hidden;
+  }
+  
+  .h1 {
+    @apply text-[30px] leading-tight md:text-[50px] md:leading-[1.3] mb-8 font-semibold
+  }
+  
+  .h2 {
+    @apply text-[30px] leading-tight md:text-[46px] md:leading-[1.3] mb-4 font-semibold
+  }
+  
+  p {
+    @apply leading-normal text-gray-900 text-[16px] lg:text-lg 
+  }
+  
+  .btn, .input {
+    @apply h-[52px]
+  }
+  
+  .input, .textarea {
+    @apply p-6  rounded text-lg  outline-none focus:ring-2 focus:ring-teal-700 border border-teal-900 placeholder:text-zinc-600 placeholder:font-normal
+  }
+  
+  .textarea {
+    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none
+  
+  }
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes scroll {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-scroll {
+  animation: scroll 30s linear infinite; 
 }
+
+.overflow-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%; 
+}
+
