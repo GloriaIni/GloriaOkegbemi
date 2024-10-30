@@ -11,7 +11,7 @@ const Contact = () => {
     message: '',
   });
 
-  //user ID
+  // User ID
   init("tuGDQ8RxbXUfx_5oj"); 
 
   const handleChange = (e) => {
@@ -55,7 +55,7 @@ const Contact = () => {
           <textarea name="message" placeholder="Message" className="textarea" value={formData.message} onChange={handleChange} required></textarea>
 
           <button type="submit" className="btn rounded-2xl max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden bg-gray-50 text-zinc-900 hover:shadow-xl group">
-            <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500 font-medium">Let's talk</span>
+            <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500 font-medium">Let&apos;s talk</span>
             <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
           </button>
         </form>
