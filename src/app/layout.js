@@ -2,7 +2,12 @@ import { Montserrat } from "next/font/google"
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 
+const LazyComponent = dynamic(() => import('@/components/Lazy'), {
+  suspense: true,
+});
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -21,9 +26,13 @@ export default function RootLayout({ children }) {
       <body
         className={`bg-gray-200 text-gray-800 page bg-cover bg-no-repeat  relative ${montserrat.variable} antialiased page`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <Suspense fallback={<div className=" animate-fadeInOut h-[100vh] flex items-center justify-center">
+              <h1 className=" text-[20px] font-bold ">gloria.okegbemi</h1>
+            </div>}>
+            <Header />
+            {children}
+            <Footer />
+      </Suspense>
       </body>
     </html>
   );

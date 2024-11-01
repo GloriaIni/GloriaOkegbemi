@@ -16,7 +16,11 @@ module.exports = {
 
       fontFamily: {
         montserrat: ["var(--montserrat)", "san-serif"]
-      }
+      },
+
+      animation: {
+        fadeInOut: 'fadeInOut 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

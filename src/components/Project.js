@@ -1,4 +1,6 @@
-import React from 'react';
+"use client"
+import FadeIn from '@/variants';
+import BeyondProjects from './BeyondProjects';
 import Link from 'next/link';
 
 const projects = [
@@ -30,12 +32,19 @@ const projects = [
 
 const Project = () => {
   return (
-    <div id='project' className="mx-auto lg:py-28 py-10">
+    <div id='projects' className="mx-auto lg:py-28 py-10">
       <div className='container px-7 lg:px-28'>
-        <h2 className="h2 flex items-center justify-center">PROJECTS</h2>
+       <FadeIn 
+       direction={"down"}
+       delay={0.4}>
+       <h2 className="h2 flex items-center justify-center">PROJECTS</h2>
+       </FadeIn>
         <div className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <div key={project.id} className="border p-4 rounded-lg">
+          {projects.map((project, index) => (
+            <FadeIn
+            direction={"up"}
+            delay={0.5 + index * 0.5}>
+                  <div key={project.id} className="border p-4 rounded-lg">
               <h2 className="text-xl font-semibold mt-2">{project.title}</h2>
               <p className="text-gray-700 mb-4">{project.description}</p>
               <div className="flex flex-wrap mb-2">
@@ -55,8 +64,11 @@ const Project = () => {
                 </Link>
               </div>
             </div>
+            </FadeIn>
           ))}
         </div>
+
+        <BeyondProjects />
       </div>
     </div>
   );

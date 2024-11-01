@@ -1,3 +1,5 @@
+"use client"
+import FadeIn from '@/variants'
 import Link from 'next/link'
 import React from 'react'
 import {FaLinkedinIn,
@@ -9,7 +11,10 @@ import {FaLinkedinIn,
 const Footer = () => {
   return (
     <div className=''>
-      <div className=" bg-gradient-to-r from-zinc-700/55 via-gray-600/90 to-black/55 pt-24 pb-8 px-10">
+     <FadeIn
+     direction={"up"}
+     delay={0.5}>
+     <div className=" bg-black/95 pt-24 pb-8 px-10">
            <div>
             <Link href={'/'}>
                 <div className={`text-gray-700 text-2xl lg:text-3xl font-bold`}><span className="text-gray-50 overline">gloria</span>okegbemi</div>
@@ -61,6 +66,7 @@ const Footer = () => {
 
           
       </div>
+     </FadeIn>
     </div>
   )
 }

@@ -11,10 +11,7 @@ export const navData = [
      name: "About Me",
       path: "#aboutme" 
     },
-  { 
-    name: "Services", 
-    path: "#services" 
-  },
+ 
   { 
     name: "Skills", 
     path: "#skills"
@@ -23,9 +20,14 @@ export const navData = [
      name: "Projects", 
      path: "#projects"
      },
+
+  { 
+    name: "Services", 
+    path: "#services" 
+  },
   {
-     name: "Hire Me",
-      path: "#hireme" 
+     name: "Contact me",
+      path: "#contact" 
     },
 ];
 
@@ -61,7 +63,7 @@ const Nav = () => {
       <div className="flex items-center justify-center text-[17px] gap-x-4">
         {navData.map((link, index) => (
           <Link
-            className={`${activePath === link.path ? "text-gray-100 font-medium rounded bg-gray-400/20" : ""} text-gray-300 font-light relative flex items-center justify-center group hover:underline transition-all duration-300`}
+            className={`${activePath === link.path ? "text-gray-100 font-semibold rounded bg-gray-400/20" : ""} text-gray-300 font-normal relative flex items-center justify-center group hover:underline transition-all duration-300`}
             href={link.path}
             key={index}
             scroll={false} 
