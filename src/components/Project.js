@@ -48,7 +48,7 @@ const Project = () => {
                   <div key={project.id} className="border p-4 rounded-lg">
               <h2 className="text-xl font-semibold mt-2">{project.title}</h2>
               <p className="text-gray-700 mb-4">{project.description}</p>
-              <div className="flex flex-wrap mb-2">
+              <div className="flex flex-wrap mb-2"> 
                 
                 {project.technologies.map((tech, index) => (
                   <span key={index} className="bg-gray-200 border border-gray-400 text-gray-700 py-1 px-2 rounded-full text-sm mr-2">
