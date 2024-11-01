@@ -42,6 +42,7 @@ const Project = () => {
         <div className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <FadeIn
+            key={project.id}
             direction={"up"}
             delay={0.5 + index * 0.5}>
                   <div key={project.id} className="border p-4 rounded-lg">
