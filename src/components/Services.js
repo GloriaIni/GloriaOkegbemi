@@ -15,8 +15,8 @@ const aboutData = [
       {
         title: (
           <span className='mt-4'>
-            Your brand deserves more than just a website, it deserves an experience.&apos;{' '}
-            <a href="#contact" className="text-teal-900 underline">
+            Your brand deserves more than just a website, it deserves an experience.{' '}
+            <a href="mailto:gloria.okegbemi@gmail.com?subject=Book a Software Engineering Consultation" className="text-teal-900 underline">
               Book a consultation
             </a>{' '}
           </span>
@@ -35,7 +35,7 @@ const aboutData = [
         title: (
           <span className='mt-4'>
             Excited to see your brand grow? I’m here to help!{' '}
-            <a href="#contact" className="font-semibold text-teal-900 underline">
+            <a href="mailto:gloria.okegbemi@gmail.com?subject=Book a Branding Consultation" className="font-semibold text-teal-900 underline">
               Book a consultation
             </a>{' '}
             and let&apos;s craft your brand&rsquo;s future!
@@ -53,7 +53,7 @@ const aboutData = [
       {
         title: (
           <span className='mt-4'>
-            <a href="#contact" className="font-semibold text-teal-900 underline">
+            <a href="mailto:gloria.okegbemi@gmail.com?subject=Book a Coaching Session" className="font-semibold text-teal-900 underline">
               Book a coaching session.
             </a>{' '}
             Don&apos;t be a stranger, say hi!
