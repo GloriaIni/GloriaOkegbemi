@@ -35,7 +35,7 @@ const aboutData = [
         title: (
           <span className='mt-4'>
             Excited to see your brand grow? I’m here to help!{' '}
-            <a href="#" className="font-semibold text-teal-900 underline">
+            <a href="#contact" className="font-semibold text-teal-900 underline">
               Book a consultation
             </a>{' '}
             and let&apos;s craft your brand&rsquo;s future!
@@ -68,7 +68,16 @@ const Services = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <div id='services' className="bg-zinc-50/30 flex items-center justify-center flex-col w-full h-[480px] px-5 py-10 lg:px-28 lg:py-12">
+    <div id='services' className="bg-zinc-50/30 flex items-center justify-center flex-col w-full  px-5 py-12 lg:px-28 lg:py-20">
+
+      <FadeIn direction={"up"} delay={0.4} > 
+        <div className="text-center mb-8">
+          <h2 className="h2 font-semibold text-gray-900">SERVICES</h2>
+          <p className="text-[16px] lg:text-xl  text-gray-600 mt-2">I offer tailored solutions that not only improve your online presence but drive growth and set you apart in your industry.</p>
+        </div>
+      </FadeIn>
+
+      
       <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
         {aboutData.map((item, index) => (
           <FadeIn direction={"right"} delay={0.5} key={index}> 
@@ -84,11 +93,12 @@ const Services = () => {
         ))}
       </div>
 
+      {/*  Details */}
       <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start max-w-[700px] text-gray-900 font-medium">
         {aboutData[selectedIndex].info.map((item, itemIndex) => (
           <FadeIn direction={"left"} delay={0.5} key={itemIndex}> 
-            <div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-teal">
-              {/* Title */}
+            <div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center">
+              
               <div className="mb-2 md:mb-0">- {item.title}</div>
             </div>
           </FadeIn>

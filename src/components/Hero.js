@@ -13,7 +13,7 @@ const Hero = () => {
           direction={"right"}
           delay={0.4}>
             <h2 className="text-start text-white lg:pl-28 lg:pr-10 h2">Gloria Inioluwa <br /> Okegbemi</h2>
-            <p className="text-gray-50 lg:pl-28 lg:pr-10">A frontend engineer dedicated to bringing digital experiences to life, crafting dynamic online presences that embody strong architecture, scalability, and security. Committed to creating impactful solutions that elevate brands and resonate with their audiences.</p>
+            <p className="text-gray-50 lg:pl-28 lg:pr-10">A frontend engineer dedicated to bringing digital experiences to life, crafting dynamic online presences that embody strong architecture, scalability, and security. Committed to creating solutions that elevate brands and resonate with their audiences.</p>
           </FadeIn>
         </div>
 

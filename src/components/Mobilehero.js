@@ -27,7 +27,7 @@ const Mobilehero = () => {
           direction={"right"}
           delay={0.7}>
             <p className="text-gray-200 mt-4 text-base md:text-lg">
-            A frontend engineer dedicated to bringing digital experiences to life, crafting dynamic online presences that embody strong architecture, scalability, and security. Committed to creating impactful solutions that elevate brands and resonate with their audiences.</p>
+            A frontend engineer dedicated to bringing digital experiences to life, crafting dynamic online presences that embody strong architecture, scalability, and security. Committed to creating solutions that elevate brands and resonate with their audiences.</p>
         </FadeIn>
       </div>
     </div>

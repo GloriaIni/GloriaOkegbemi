@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
-import { BsArrowRight, BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
+import { BsArrowRight, 
+  BsGithub, 
+  BsLinkedin, 
+  BsTwitterX } from "react-icons/bs";
 import { init, send } from '@emailjs/browser';
 import FadeIn from "@/variants";
 
@@ -12,7 +15,6 @@ const Contact = () => {
     message: '',
   });
 
-  // Initialize EmailJS with your User ID
   init("tuGDQ8RxbXUfx_5oj");
 
   const handleChange = (e) => {
@@ -37,14 +39,14 @@ const Contact = () => {
       <FadeIn direction="right" delay={0.5}>
         <div className="flex-1 flex flex-col items-start">
           <h2 className="h2 px-2">Get a Response In Minutes!</h2>
-          <div className="flex space-x-4 mt-4 mb-8">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <div className="flex space-x-4 mt-4 mb-8 px-2">
+            <a href="www.linkedin.com/in/gloria-okegbemi-0a65011b0" target="_blank" rel="noopener noreferrer">
               <BsLinkedin className="text-xl" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/ini01uwa?t=TLJtDXlIkKoAMJRgnHB4Gw&s=09" target="_blank" rel="noopener noreferrer">
               <BsTwitterX className="text-xl" />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/GloriaIni" target="_blank" rel="noopener noreferrer">
               <BsGithub className="text-xl" />
             </a>
           </div>

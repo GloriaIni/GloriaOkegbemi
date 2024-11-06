@@ -19,8 +19,6 @@ const AboutMe = () => {
               I’m a <span className='font-medium underline'>frontend engineer</span> with a sharp focus on creating high-impact,{' '}
               <span className='font-medium underline'>responsive websites that enhance brand credibility and user engagement.</span>
               <br />
-              My background includes building functional e-commerce platforms, school management systems, and more, where each project showcases my commitment to sleek design, functionality, and a seamless user experience.
-              <br />
               Beyond code, I am passionate about <span className='underline font-medium'>brand growth</span> and use my skills to help clients not only reach but <span className='underline font-medium'>captivate their target markets, creating solutions that resonate with users.</span>
               <br />
               I bring a consultative approach, working closely with clients to understand their vision and goals, and <span className='font-medium underline'>ensuring each project meets high standards of performance and design.</span> If you are looking for a <span className='font-medium underline'>developer who values strategic thinking and precision</span>, let&apos;s discuss how I can contribute to your team/next project.

@@ -38,8 +38,18 @@ const Header = () => {
             <Nav />
           </div>
 
+          <li className="hidden lg:flex">
+              <a
+                href="/docs/GLORIA INIOLUWA OKEGBEMI.pdf"
+                className="block py-2 px-4 text-gray-200 border border-gray-200 rounded hover:bg-gray-200 hover:text-gray-900 hover:font-semibold transition-all duration-200 cursor-pointer "
+                download={"GLORIA INIOLUWA OKEGBEMI.pdf"}
+              >
+                Resume
+              </a>
+            </li>
+
           {/* Mobile Hamburger */}
-          <div className="lg:hidden">
+          <div className="flex lg:hidden">
             <Mobilenav />
           </div>
         </div>
