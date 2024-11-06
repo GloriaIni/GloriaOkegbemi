@@ -44,11 +44,11 @@ const Project = () => {
               <h2 className="h2 flex items-center justify-center mb-7">PROJECTS</h2>
         </FadeIn>
 
-        {/* Mobile view */}
+        {/* Mobile */}
         <div className="block md:hidden">
           {currentProjects.map((project) => (
             <FadeIn key={project.id} direction={currentPage > 0 ? "left" : "right"} delay={0.5}>
-              <div className="text-center border p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200 w-full h-64 flex flex-col justify-between">
+              <div className="text-center border p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200 w-full h-72 lg:h-64 flex flex-col justify-between">
                 <h2 className="text-xl font-semibold mt-2">{project.title}</h2>
                 <p className="text-gray-700 mb-4">{project.description}</p>
                 <div className="flex flex-wrap justify-center mb-2"> 
