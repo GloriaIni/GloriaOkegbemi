@@ -40,9 +40,9 @@ const Header = () => {
 
           <li className="hidden lg:flex">
               <a
-                href="/docs/GLORIA INIOLUWA OKEGBEMI.pdf"
+                href="/docs\Resume-GLORIA INIOLUWA OKEGBEMI.pdf"
                 className="block py-2 px-4 text-gray-200 border border-gray-200 rounded hover:bg-gray-200 hover:text-gray-900 hover:font-semibold transition-all duration-200 cursor-pointer "
-                download={"GLORIA INIOLUWA OKEGBEMI.pdf"}
+                download={"Resume-GLORIA INIOLUWA OKEGBEMI.pdf"}
               >
                 Resume
               </a>

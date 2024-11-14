@@ -72,10 +72,10 @@ const Mobilenav = () => {
             </li>
             <li>
               <a
-                href="/docs/GLORIA INIOLUWA OKEGBEMI.pdf"
+                href="\docs\Resume-GLORIA INIOLUWA OKEGBEMI.pdf"
                 onClick={handleLinkClick}
                 className="block py-2 px-4 rounded hover:bg-gray-300 hover:text-gray-900 transition-all duration-200 cursor-pointer border border-gray-600"
-                download={"GLORIA INIOLUWA OKEGBEMI.pdf"}
+                download={"Resume-GLORIA INIOLUWA OKEGBEMI.pdf"}
               >
                 Resume
               </a>
